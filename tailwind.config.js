@@ -2,8 +2,21 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'putararah' : 'putararah 3s linear infinite'
+      },
+      keyframes: {
+        putararah: {
+          from : { transform: 'rotate(0deg)'},
+          to : {transform: 'rotate(-360deg)' }
+        }
+      }
+    },
   },
   plugins: [],
+
+  
 }
 
